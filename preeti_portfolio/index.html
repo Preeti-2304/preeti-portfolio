@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 20px;
+        }
+        .about, .projects, .contact {
+            margin: 20px 0;
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .project {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .project img {
+            width: 100%;
+            height: auto;
+        }
+        .project h3 {
+            margin: 10px;
+        }
+        .project p {
+            margin: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #333;
+            color: #fff;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm a passionate web developer with experience in creating dynamic and user-friendly websites. I love bringing ideas to life through code.</p>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <img src="p2.png" alt="Project 1">
+                <h3>Project 1</h3>
+                <p>A brief description of the project goes here.</p>
+            </div>
+            <div class="project">
+                <img src="p1.png" alt="Project 2">
+                <h3>Project 2</h3>
+                <p>A brief description of the project goes here.</p>
+            </div>
+            <div class="project">
+                <img src="p3.webp" alt="Project 3">
+                <h3>Project 3</h3>
+                <p>A brief description of the project goes here.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact</h2>
+            <p>If you'd like to get in touch, feel free to send me an email at <a href="mailto:preeti@gmail.com">preeti@gmail.com</a>.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
